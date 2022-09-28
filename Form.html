@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+    body{
+      background-image: url('back8.jfif');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+    }
+  </style>
   <title>Profile</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,59 +21,59 @@
       var te = document.getElementById("t1").value;
       var result = sn + ' ' + se+ ' ' +te;
         alert(result)
-        window.print();
     }
   </script>
 </head>
 <body style="background-color: grey;">
-<nav class="navbar navbar-expand-sm bg-light">
+<nav class="navbar navbar-expand-sm bg-dark">
   <div class="container-fluid">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="http://127.0.0.1:5500/Profile.html">Home</a>
+        <a style="color: white;" class="nav-link" href="http://127.0.0.1:5500/Profile.html">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="http://127.0.0.1:5500/About.html">About</a>
+        <a style="color: white;" class="nav-link" href="http://127.0.0.1:5500/About.html">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="http://127.0.0.1:5500/Profession.html">Profession</a>
+        <a style="color: white;" class="nav-link" href="http://127.0.0.1:5500/Profession.html">Profession</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Education</a>
+        <a style="color: white;" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Education</a>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="http://127.0.0.1:5500/Hschool.html">High School</a></li>
-          <li><a class="dropdown-item" href="http://127.0.0.1:5500/HSschool.html">Higher Secondry School</a></li>
-          <li><a class="dropdown-item" href="http://127.0.0.1:5500/Graduation.html">Graduation</a></li>
+          <li><a  class="dropdown-item" href="http://127.0.0.1:5500/Hschool.html">High School</a></li>
+          <li><a  class="dropdown-item" href="http://127.0.0.1:5500/HSschool.html">Higher Secondry School</a></li>
+          <li><a  class="dropdown-item" href="http://127.0.0.1:5500/Graduation.html">Graduation</a></li>
         </ul>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="http://127.0.0.1:5500/Gallery.html">Gallery</a>
+        <a style="color: white;" class="nav-link" href="http://127.0.0.1:5500/Gallery.html">Gallery</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="http://127.0.0.1:5500/Contact.html">Contact</a>
+        <a style="color: white;" class="nav-link" href="http://127.0.0.1:5500/Contact.html">Contact</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="http://127.0.0.1:5500/Form.html">Form</a>
+        <a style="color: white;" class="nav-link" href="http://127.0.0.1:5500/Form.html">Inquiery</a>
       </li>
     </ul>
   </div>
 </nav>
 <div class="container">
+  <center style="color: white;"><h3>If you have any question please do ask me here... </h3></center>
   <form action="/action_page.php">
     <div class="form-group">
-      <label for="email">Name:</label>
+      <label style="color: white;" for="email">Name:</label>
       <input type="text" id="n1"name="name" class="form-control" placeholder="Your Name" required>  
     </div>
     <div class="form-group">
-      <label for="pwd">Email :</label>
+      <label style="color: white;" for="pwd">Email :</label>
       <input type="email" class="form-control" id="e1" placeholder="Enter email" name="email" required >
     </div>
     <div class="mt-3 mb-3">
-      <label for="message" class="form-label">Message you wish to send: </label>
+      <label style="color: white;" for="message" class="form-label">Message you wish to send: </label>
       <textarea name="message" id="t1" cols="20" rows="6" class="form-control" placeholder="message"></textarea>
   </div>
   <div class="checkbox">
-    <label><input type="checkbox" name="remember"> Do you want a copy of this response?</label>
+    <label style="color: white;" ><input type="checkbox" name="remember"> Do you want a copy of this response?</label>
   </div>
   <br>
   <button id="b1" onclick=testVariable() class="btn btn-primary">

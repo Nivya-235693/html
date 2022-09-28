@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+          background-image: url('back.jfif');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+        </style>
+        <script>
+        function testVar() {
+            var sn = document.getElementById("n1").value;          
+            var se = document.getElementById("e1").value;
+            var te = document.getElementById("t1").value;
+            var result = sn + ' ' + se+ ' ' +te;
+                alert(result)
+                window.print();
+        }
+        </script>
+  <title>Art class</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <form action="/action_page.php">
+        <div class="form-group">
+          <label for="email">Name:</label>
+          <input type="text" id="n1"name="name" class="form-control" placeholder="Your Name" required>  
+        </div>
+        <div class="form-group">
+          <label for="pwd">Email :</label>
+          <input type="email" class="form-control" id="e1" placeholder="Enter email" name="email" required >
+        </div>
+        <div class="mt-3 mb-3">
+          <label for="message" class="form-label">Message you wish to send: </label>
+          <textarea name="message" id="t1" cols="20" rows="6" class="form-control" placeholder="message"></textarea>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" name="remember"> Do you want a copy of this response?</label>
+      </div>
+      <br>
+      <button id="b1" onclick=testVar() class="btn btn-primary">
+          SUBMIT FORM
+      </button>
+      </form>
+    <div class="container">
+        <a href="http://127.0.0.1:5500/Artclass.html" class="btn btn-info" role="button">Back</a>
+        </div>
+</body>
+</html>
