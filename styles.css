@@ -1,0 +1,72 @@
+body{
+    background-image: url('log.jfif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+table{
+    width: 80%;
+    margin: 40px auto;
+    background: rgb(224, 164, 129);
+}
+
+table.list{
+    text-align: center;
+    width: 100%;
+}
+
+td{
+    border: 1px solid rgb(212, 131, 131);
+    text-align: left;
+    padding: 8px 15px;
+}
+
+tr:nth-child(even), table.list thread> tr{
+    background-color: rgb(243, 120, 63);
+}
+
+input[type="text"],input[type="number"]{
+    width:91%;
+    padding:12px 20px;
+    margin:8px 0;
+    display: inline-block;
+    border: 1px solid rgb(98, 87, 138);
+    border-radius: 4px;
+}
+
+input[type="submit"],input[type="reset"]{
+    background: rgb(140, 201, 193);
+    padding:6px 12px;
+    margin:15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover{
+    background: #7da2c0;
+}
+
+input[type="reset"]:hover{
+    background: #7da2c0;
+}
+
+button{
+    background: rgb(172, 214, 161);
+    padding:6px 12px;
+    margin:15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover{
+    background:#4a9da3 ;
+}
