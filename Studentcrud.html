@@ -4,6 +4,7 @@
     <link type="text/css" rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <center><h1 style="color: black;">Student Details</h1></center>
     <table>
         <tr>
             <td>
@@ -30,7 +31,8 @@
                         <input type="reset" value="Reset">
                     </div>
                 </form>
-
+            </td>
+            <tr>
                 <td>
                     <table class="list" id="storeList">
                         <thead>
@@ -40,6 +42,11 @@
                                 <th>Mark Obtained in Maths</th>
                                 <th>Mark Obtained in Science</th>
                             </tr>
+                            <tr>
+                                <div class="form_action--button">
+                                    <input type="submit" value="delete" onclick="onDelete()">
+                            </div>
+                            </tr>
                         </thead>
                         <tbody>
                         </tbody>
@@ -48,6 +55,6 @@
             </td>
         </tr>
     </table>
-    <!---<script type="text/javascript" src="./script.js"></script>-->
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>

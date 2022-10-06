@@ -35,7 +35,7 @@ input[type="text"],input[type="number"]{
     border-radius: 4px;
 }
 
-input[type="submit"],input[type="reset"]{
+input[type="submit"],input[type="reset"],input[type="delete"]{
     background: rgb(140, 201, 193);
     padding:6px 12px;
     margin:15px 0 10px;
@@ -69,4 +69,8 @@ button{
 
 button:hover{
     background:#4a9da3 ;
+}
+
+input[type="reset"]:hover{
+    background: #7da2c0;
 }

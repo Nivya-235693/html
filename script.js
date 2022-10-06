@@ -35,7 +35,7 @@ function insertNewRecord(data) {
     cell4 = newRow.insertCell(3);
 		cell4.innerHTML = data.perPrice;
     cell4 = newRow.insertCell(4);
-        cell4.innerHTML = `<button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button>`;
+        cell4.innerHTML = `<button onClick="onEdit(this)">Edit</button> <input type="checkbox" id="del">`;
 }
 
 //Edit the data
