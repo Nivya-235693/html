@@ -10,20 +10,20 @@
             <td>
                 <form autocomplete="off" onsubmit="onFormSubmit()">
                     <div>
-                        <label for="productCode">Roll number</label>
-                        <input type="text" name="productCode" id="productCode">
+                        <label for="rollno">Roll number</label>
+                        <input type="text" name="rollno" id="rollno">
                     </div>
                     <div>
-                        <label for="product">Student Name</label>
-                        <input type="text" name="product" id="product">
+                        <label for="name">Student Name</label>
+                        <input type="text" name="name" id="name">
                     </div>
                     <div>
-                        <label for="qty">Mark Obtained in Maths out of 20</label>
-                        <input type="number" name="qty" id="qty">
+                        <label for="m1">Mark Obtained in Maths out of 20</label>
+                        <input type="number" name="m1" id="m1">
                     </div>
                     <div>
-                        <label for="perPrice">Mark Obtained in Science out of 20</label>
-                        <input type="number" name="perPrice" id="perPrice">
+                        <label for="m2">Mark Obtained in Science out of 20</label>
+                        <input type="number" name="m2" id="m2">
                     </div>
 
                     <div class="form_action--button">
@@ -42,14 +42,14 @@
                                 <th>Mark Obtained in Maths</th>
                                 <th>Mark Obtained in Science</th>
                             </tr>
-                            <tr>
-                                <div class="form_action--button">
-                                    <input type="submit" value="delete" onclick="onDelete()">
-                            </div>
-                            </tr>
                         </thead>
                         <tbody>
                         </tbody>
+                        <tr>
+                            <div class="form_action--button">
+                                <input type="submit" value="delete" onclick="onDelete()">
+                        </div>
+                        </tr>
                     </table>
                 </td>
             </td>
