@@ -1,12 +1,21 @@
-   <h1 >ADD THINGS TO DO</h1>
-  <div class="d-flex justify-content-center">
-  <input class="col-4" type="text"  placeholder="Enter things to do" #bo />
-    <button (click)="add(bo.value)">Add</button>
-  </div>
-  <div class="d-flex flex-column mt-4 align-items-center ">
-  
-    <h1>TO-DO</h1>
-    <ul *ngFor="let items of list,index as i">
-      <li > {{list[i].item}} <button value="remove" (click)="remove(i)">Remove</button> </li>
-    </ul>
-  </div>
+<h1 >ADD THINGS TO DO</h1>
+<div class="d-flex justify-content-center">
+<input class="col-2" type="text" placeholder="Enter things to do" #bo />
+<input class="col-2" type="date" placeholder="Enter things to do" #bo1 />
+  <button  #btn (keydown.enter)="EnterSubmit(bo.value,bo,bo1.value)" (click)="EnterSubmit(bo.value,bo,bo1.value)">Add</button>
+</div>
+<div class="d-flex flex-column mt-4 align-items-center ">
+  <h1>TO-DO</h1>
+<table>
+    <tr>
+        <th>TO-DO</th>
+        <th>DATE</th>
+        <th>DELETE</th>
+      </tr>
+      <tr *ngFor="let item of list,index as i">
+        <td >{{list[i].item}} </td>
+        <td >{{listd[i].date}} </td>
+        <td><button value="remove" (click)="remove(i)">Remove</button> </td>
+      </tr>
+    </table>
+</div>
